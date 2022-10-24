@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".activity.SignUpActivity">
+
+    <TextView
+        android:id="@+id/tvSignin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/label_signin"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/gilroy_bold"
+        />
+
+
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="5dp"
+        android:inputType="textEmailAddress"
+        android:fontFamily="@font/gilroy_light"
+        android:textColor="@color/colorText"
+        android:background="@drawable/edt_text_background"
+        android:padding="12dp"
+        android:hint="@string/edt_email"/>
+
+    <EditText
+        android:id="@+id/edtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="5dp"
+        android:inputType="textPassword"
+        android:fontFamily="@font/gilroy_light"
+        android:textColor="@color/colorText"
+        android:background="@drawable/edt_text_background"
+        android:padding="12dp"
+        android:hint="@string/edt_password"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/logInButton"
+        android:layout_width="361dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_signup_background"
+        android:text="@string/btn_login"
+        android:fontFamily="@font/gilroy_bold"
+        android:textColor="@color/colorTextButton"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/signUpButton"
+        android:layout_width="361dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_signin_background"
+        android:text="@string/btn_signup"
+        android:fontFamily="@font/gilroy_bold"
+        android:textColor="@color/colorTextButton"
+        />
+
+
+</LinearLayout>
